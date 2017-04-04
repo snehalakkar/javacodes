@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/bridgeit/sunil/first" added="2017-03-25T08:11:21Z" modified="2017-03-25T10:22:07Z" visited="2017-03-25T08:11:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-03-25T08:11:21Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-03-25T10:22:07Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/Downloads/BridgeLabz%20Engineer%20Dev%20Plans(2).xlsx" added="2017-04-03T04:29:50Z" modified="2017-04-04T04:00:46Z" visited="2017-04-03T04:29:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2017-04-03T04:29:50Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2017-04-04T04:00:46Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2017-04-04T04:00:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/sb" added="2017-04-03T05:21:48Z" modified="2017-04-03T13:50:47Z" visited="2017-04-03T05:21:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T13:50:47Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-04-03T11:52:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/Documents/d" added="2017-04-03T07:17:31Z" modified="2017-04-03T07:17:37Z" visited="2017-04-03T07:17:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T07:17:37Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/.sb" added="2017-04-03T09:47:33Z" modified="2017-04-03T09:54:12Z" visited="2017-04-03T09:47:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T09:54:12Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/.hii" added="2017-04-03T09:53:23Z" modified="2017-04-03T09:53:23Z" visited="2017-04-03T09:53:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T09:53:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/.a" added="2017-04-03T09:54:16Z" modified="2017-04-03T09:54:16Z" visited="2017-04-03T09:54:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-archive"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;file-roller %U&apos;" modified="2017-04-03T09:54:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/si" added="2017-04-03T11:40:04Z" modified="2017-04-03T11:57:59Z" visited="2017-04-03T11:40:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T11:57:59Z" count="6"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-04-03T11:57:00Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/hii%20bye" added="2017-04-03T11:51:30Z" modified="2017-04-03T13:50:43Z" visited="2017-04-03T11:51:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T13:50:43Z" count="5"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-04-03T11:56:57Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/hello" added="2017-04-03T11:57:42Z" modified="2017-04-03T11:57:53Z" visited="2017-04-03T11:57:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T11:57:53Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/pqr" added="2017-04-03T12:56:37Z" modified="2017-04-03T12:56:37Z" visited="2017-04-03T12:56:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T12:56:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/soy" added="2017-04-03T12:56:42Z" modified="2017-04-03T12:56:42Z" visited="2017-04-03T12:56:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T12:56:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/snehal/u" added="2017-04-03T13:04:17Z" modified="2017-04-03T13:04:17Z" visited="2017-04-03T13:04:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-03T13:04:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/java%20prog/bbb.c" added="2017-04-04T05:19:56Z" modified="2017-04-04T05:20:01Z" visited="2017-04-04T05:19:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-04-04T05:19:56Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T05:20:01Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/shel/s.sh" added="2017-04-04T07:08:56Z" modified="2017-04-04T07:59:41Z" visited="2017-04-04T07:08:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T07:59:41Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-04-04T07:13:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/sd.sh" added="2017-04-04T08:03:50Z" modified="2017-04-04T10:23:50Z" visited="2017-04-04T08:03:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T10:23:50Z" count="26"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-04-04T09:26:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/c%20prog/javacodes/bbb.c" added="2017-04-04T09:59:20Z" modified="2017-04-04T09:59:20Z" visited="2017-04-04T09:59:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T09:59:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/c%20prog/javacodes/df.java" added="2017-04-04T09:59:27Z" modified="2017-04-04T09:59:27Z" visited="2017-04-04T09:59:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-java"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T09:59:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/c%20prog/javacodes/README.md" added="2017-04-04T09:59:33Z" modified="2017-04-04T09:59:33Z" visited="2017-04-04T09:59:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T09:59:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/c%20prog/javacodes/as.c" added="2017-04-04T09:59:50Z" modified="2017-04-04T09:59:50Z" visited="2017-04-04T09:59:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T09:59:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/bachpana/sdf.c" added="2017-04-04T10:30:36Z" modified="2017-04-04T10:30:43Z" visited="2017-04-04T10:30:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T10:30:43Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/bachpana/asd.c" added="2017-04-04T10:30:55Z" modified="2017-04-04T10:31:05Z" visited="2017-04-04T10:30:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T10:31:05Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/bachpana/hjk.java" added="2017-04-04T10:31:31Z" modified="2017-04-04T10:31:37Z" visited="2017-04-04T10:31:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-java"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T10:31:37Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/bridgeit/babu/abcd/asd.c" added="2017-04-04T10:53:02Z" modified="2017-04-04T10:53:02Z" visited="2017-04-04T10:53:02.484637Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-04-04T10:53:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

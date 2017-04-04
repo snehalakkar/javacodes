@@ -1,0 +1,64 @@
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/bridgeit/.cache/oneconf/8ad40e93a5f22d38c7bad7fb58d24770/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+module-cache-reaper-Message: Reaping abandoned data directories
+module-cache-reaper-Message: Reaping abandoned cache directories
+Activating service name='org.gtk.vfs.Metadata'
+Successfully activated service 'org.gtk.vfs.Metadata'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/bridgeit/.cache/oneconf/8ad40e93a5f22d38c7bad7fb58d24770/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+Activating service name='com.canonical.Unity.Scope.Home'
+Successfully activated service 'com.canonical.Unity.Scope.Home'
+
+(unity-scope-home:6073): unity-scope-home-WARNING **: platform-info.vala:112: Unable to read SIM properties: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files
+Activating service name='com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.LocalFiles'
+Activating service name='com.canonical.Unity.Scope.File.Gdrive'
+
+(process:6088): unity-files-daemon-WARNING **: folder.vala:65: Failed to read favorites: Failed to open file '/home/bridgeit/.gtk-bookmarks': No such file or directory
+Successfully activated service 'com.canonical.Unity.Scope.LocalFiles'
+Successfully activated service 'com.canonical.Unity.Scope.File.Gdrive'
+Successfully activated service 'com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.Music'
+Successfully activated service 'com.canonical.Unity.Scope.Music'
+
+(unity-music-daemon:6138): unity-music-daemon-WARNING **: rhythmbox-collection.vala:510: Unable to open album-art DB!
+
+(unity-music-daemon:6138): unity-music-daemon-WARNING **: rhythmbox-collection.vala:574: Error while parsing rhythmbox DB: Error opening file: No such file or directory
+
+(unity-scope-home:6073): libunity-WARNING **: unity-aggregator-scope.vala:145: Error serializing GVariant with type string 'mv' to the D-Bus wire format
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2202): WARNING **: Unable to get info on application://nautilus-autostart.desktop

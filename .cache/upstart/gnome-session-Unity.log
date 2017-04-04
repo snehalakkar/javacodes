@@ -1,0 +1,64 @@
+Error loading .desktop file /usr/share/applications/gnome-deja-dup-panel.desktop: constructor returned NULL
+Error loading .desktop file /usr/share/app-install/desktop/deja-dup:gnome-deja-dup-panel.desktop: constructor returned NULL
+javaldx: Could not find a Java Runtime Environment!
+Warning: failed to read path from javaldx
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+javaldx: Could not find a Java Runtime Environment!
+Warning: failed to read path from javaldx
+
+** (update-notifier:2268): WARNING **: log file empty (logrotate?) /var/log/dpkg.log
+
+** (update-notifier:2268): WARNING **: log file empty (logrotate?) /var/log/apt/term.log
+ERROR 2017-04-04 09:46:20 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2017-04-04 09:46:20 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2017-04-04 09:46:20 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+1491280341510	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1491280341880	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1491280342193	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1491280343109	addons.xpi	WARN	System add-on websensehelper@mozilla.org isn't compatible with the application.
+1491280343114	addons.manager	WARN	Failed to update system addons: Error: Rejecting updated system add-on set that either could not be downloaded or contained unusable add-ons. (resource://gre/modules/addons/XPIProvider.jsm:3017:15) JS Stack trace: this.XPIProvider.updateSystemAddons<@XPIProvider.jsm:3017:15
+
+(process:2879): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(gnome-terminal:2949): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+ERROR 2017-04-04 11:32:17 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2017-04-04 11:32:17 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2017-04-04 11:32:17 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2017-04-04 12:02:23 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2017-04-04 12:02:23 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2017-04-04 12:02:23 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(process:5734): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(gnome-terminal:5902): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(gnome-terminal:5926): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(gnome-terminal:5970): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(gnome-terminal:6003): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+WARN  2017-04-04 13:28:52 unity.iconloader IconLoader.cpp:755 Unable to load icon file:/// at size -1x22: Can't open directory
+ERROR 2017-04-04 13:43:27 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2017-04-04 13:43:27 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2017-04-04 13:43:27 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(gedit:6338): Gtk-WARNING **: GtkScrolledWindow 0x16fb880 is mapped but visible child GtkScrollbar 0x1704a30 is not mapped
+
+(gedit:6338): Gtk-WARNING **: GtkScrolledWindow 0x16fb880 is mapped but visible child GtkScrollbar 0x1704c30 is not mapped
+
+(gedit:6338): Gtk-WARNING **: GtkScrolledWindow 0x16fb880 is mapped but visible child GtkScrollbar 0x1704a30 is not mapped
+
+(gedit:6338): Gtk-WARNING **: GtkScrolledWindow 0x16fb880 is mapped but visible child GtkScrollbar 0x1704c30 is not mapped
+ERROR 2017-04-04 15:13:48 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2017-04-04 15:13:48 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2017-04-04 15:13:48 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2017-04-04 15:24:59 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2017-04-04 15:24:59 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2017-04-04 15:24:59 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(firefox:2149): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+

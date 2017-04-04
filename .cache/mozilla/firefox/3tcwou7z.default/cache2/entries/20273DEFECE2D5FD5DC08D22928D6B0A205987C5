@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="copyright" content="Copyright 2017, The Trustees of Indiana University" />
+    <meta name="description" content=" To quit the vi editor without saving any changes you&#39;ve made: " />
+    <link rel="search" type="application/opensearchdescription+xml" title="IU Knowledge Base" href="/resources/kms/opensearch.xml" />
+    <title>How do I quit the vi editor without saving my changes? </title>
+    <meta name="keywords" />
+    <meta name="last-modified" content="2016-11-30 13:56:45" />
+    <meta name="audiences" content="default" />
+    <meta name="approved" content="2016-11-30 13:56:41" />
+    <meta name="owner-group" content="scunix" />
+    <meta name="docid" content="afcz" />
+    <meta name="cache-hits" content="0" />
+    <meta name="cache-misses" content="0" />
+    <link rel="canonical" href="https://kb.iu.edu/d/afcz" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- commentDefault.html -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <!-- BRAND FONTS -->
+    <!--
+    <link href="//fonts.iu.edu/style.css?family=BentonSans:regular,bold,italic|BentonSansLight:regular|BentonSansCond:regular,bold|GeorgiaPro:regular" media="screen" rel="stylesheet" type="text/css"/>
+    -->
+    <link href="//fonts.iu.edu/style.css?family=BentonSansCond:bold,regular" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/resources/build/it/fonts/fonts.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" media="screen,print" href="/resources/build/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/jquery/ui/css/jquery-ui-1.10.4.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/jquery/colorbox/css/colorbox.css" />
+    <!-- IU BRANDING -->
+    <link rel="stylesheet" type="text/css" href="/resources/build/iu/css/iu-brand.css" />
+    <!-- UITS BRANDING -->
+    <link rel="stylesheet" type="text/css" href="/resources/build/it/css/it-brand.css" />
+    <!-- custom styles for KB -->
+    <link rel="stylesheet" type="text/css" href="/resources/build/kb/css/kb.css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/resources/bootstrap/js/html5shiv.js"></script>
+    <script src="/resources/bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- custom styles for KMS: may override Bootstrap & IU Branding styles -->
+    <link rel="stylesheet" type="text/css" media="screen,print" href="/resources/build/kb/css/kms.css" />
+    <!-- custom styles for KB -->
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/build/kms/css/print.css" />
+    <!-- overrides -->
+    <link rel="stylesheet" type="text/css" href="/resources/build/kb/css/overrides.css" />
+    <script src="/resources/kms/js/head.js"><!--comment--></script>
+</head>
+<body class="kms-doc comment-default-layout">
+<!-- Wrap all page content here -->
+<div id="wrap">
+    <div>
+
+    <div id="sr-links" class="sr-only">
+        Skip to:
+        <ul>
+            
+            
+                <li>
+                    <a id="skip-to-content" href="#kms-document-div" accesskey="c">content</a>
+                </li>
+            
+            <li><a id="skip-to-search" href="#search-input">search</a></li>
+            <li>
+                <span>
+                    <a id="skip-to-login" accesskey="l" href="#login_button">login</a>
+                </span>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+    <header class="institution-header" id="branding-bar-v1" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity">
+
+    <div class="bar">
+        <!-- *** Changed "wrapper" class to "canister" to work with our grid system.
+        Also added a "whole" unit to get the header to line up. *** -->
+        <div class="canister">
+            <div class="unit whole">
+                <h1 class="campus">
+                    <a href="http://www.iu.edu" title="Indiana University">
+                        <img src="//assets.iu.edu/brand/1.x/trident-tab.gif" height="73" width="64" alt=" " />
+                        <span class="show-on-desktop" itemprop="name sourceOrganization provider">Indiana University</span>
+                        <span class="show-on-tablet" itemprop="name sourceOrganization provider">Indiana University</span>
+                        <span class="show-on-mobile" itemprop="name sourceOrganization provider">Indiana University</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="site-content">
+        <header id="nav-bar" class="site-header hidden-print">
+    <!-- Fixed navbar -->
+    <div class="canister skinny">
+        <div class="unit half">
+            <h1 class="site-title"><a class="site-title-link" href="/index.html">Knowledge Base</a></h1>
+        </div>
+        <!-- Checkbox needs to be here -->
+        <input type="checkbox" value="1" id="menuToggle" class="show-nav hidden-element" />
+        <div class="unit half nav-bg nav-container">
+            <div class="mobile-only show-nav-btn">
+                <label for="menuToggle" class="mobile-only show-nav"><i class="fa fa-bars">&nbsp;</i><span class="sr-only">Menu</span></label>
+            </div>
+            <div class="site-nav" id="nav-toggle">
+                <nav role="navigation" class="nav-inline text-right">
+                    <ul>
+                        <li class="default"><a href="/">Home</a>
+                        </li>
+                        <li class="default"><a href="/d/menu">Menu</a></li>
+                        <li class="default"><a href="/d/line">About us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="kb-content">
+            <section class="section it-black-90 hidden-print iu-cream-text search-bar">
+                <div class="canister" id="KMS-search">
+                    <form class="form-inline" role="search" method="GET" action="/search">
+
+    <div class="canister kb-search-container">
+        <div class="unit whole" id="search-input">
+            <label class="sr-only" for="">Knowledge Base</label>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input type="text" class="kb-search-text sqr-it" accesskey="s" id="kb-search-text" size="35" name="q" placeholder="Search the Knowledge Base..." value="" />
+                    <button class="button-primary kb-search sqr-it" type="submit" id="search-button">
+                        <span class="glyphicon glyphicon-search"></span><span class="sr-only">Search</span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-5 lg-content-centered md-content-centered sm-content-left xs-content-left">
+                    <span class="button-secondary login-button">
+                        
+                        <a class="" accesskey="i" id="login_button" href="/secure?returnUrl=%2Fd%2Fafcz">
+                            <span class="glyphicon glyphicon-log-in"></span> <span class=""> Log in</span>
+                        </a>
+                    </span>
+                    
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-7 lg-content-right md-content-right sm-content-right xs-content-right">
+                    <ul class="search-tool-buttons it-black-90-text simple-button-group filled-buttons tight-buttons">
+                        <li class="" id="search-options-button">
+                            <button type="button" class="it-black-15 it-black-90-text options-button button-secondary collapsed" data-toggle="collapse" data-target="#search-options">
+                                <span class="glyphicon glyphicon-cog" title="Options"></span>
+                                <span class="sr-only">Options</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="it-black-15 it-black-90-text help-button button-secondary" data-container="body" data-toggle="popover" data-placement="left" data-html="true" title="" data-content="&lt;p&gt;Chat: &lt;a href=&#39;http://ithelplive.iu.edu&#39;&gt;ITHelpLive&lt;/a&gt;&lt;br /&gt;Email: &lt;a href=&#39;mailto:ithelp@iu.edu&#39;&gt;ithelp@iu.edu&lt;/a&gt;&lt;br /&gt;Phone: &lt;a href=&#39;/d/bdti?t=plain&#39;&gt;Call your campus support center&lt;/a&gt;&lt;br /&gt;&lt;a href=&#39;/d/amgy&#39;&gt;More options &gt;&gt;&lt;/a&gt;&lt;/p&gt;">
+                                <span class="glyphicon glyphicon-question-sign" title="Help"></span>
+                                <span class="sr-only">Help</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="canister editor-buttons-and-options">
+        <div class="unit two-thirds pull-right">
+            <div class="canister search-options-container collapse" id="search-options">
+                <div class="unit one-third" id="KBsearchNumber">
+                    <select class="" id="KBsearchNumberSelect" name="s">
+                        <option>15</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>300</option>
+                    </select>
+                    <label for="KBsearchNumberSelect">results per page&nbsp;&nbsp;&nbsp; </label>
+                </div>
+                <div class="unit two-thirds" id="KBsearchArchive">
+                    <input type="checkbox" id="a" name="a" value="yes" />
+                    <label for="a">Include archived documents</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+                </div>
+            </section>
+            <section class="section">
+                <div class="canister page-content" id="KMS-content">
+                    <div class="unit kb-doc">
+                        <!-- Begin page content -->
+                        <main class="main kb">
+    
+    <div id="kms-document-div"><h1>How do I quit the vi editor without saving my changes? </h1>
+<!-- Frozen. -->
+
+<p> To quit the <a class="kbh" href="adxz" title="">vi</a> editor without saving any changes you've made: </p>
+
+<ol>
+
+<li>If you are currently in insert or append mode, press <code>Esc</code>. </li>
+
+<li>Press <code>:</code> (colon). The cursor should reappear at the lower left corner of the screen beside a colon prompt. </li>
+
+<li>Enter the following:
+
+<pre class="example"> q!</pre> This will quit the editor, and all changes you have made to the document will be lost. </li>
+</ol>
+
+<div>
+
+<!--BOILER START -->
+
+<!-- this document is being used for testing the KMS. PLEASE DO NOT CHANGE IT. automated testing depends on its being stable. if you have questions, contact madalton or one of the devs -->
+
+<p>At Indiana University, for personal or departmental Linux or Unix systems support, see <a class="kba" href="beqc" title="">At IU, how do I get support for Linux or Unix?</a>
+</p>
+
+<!--BOILER END -->
+ </div>
+<div class="references panel panel-primary"><div class="panel-heading"><h3 class="panel-title">Related documents</h3></div>
+<div class="list-group"><a class="list-group-item" href="adxz">How do I use the vi text editor?</a>
+</div></div>
+</div>
+
+
+</main>
+
+                        <div>
+
+
+    <div id="kms-document-div">
+
+        <div id="kms-documentMetadata-div">
+            <p>
+                <em>This is document</em> <span>afcz</span> <em>in the Knowledge Base.</em>
+                <br />
+                <em>Last modified on</em> <span>2016-11-30 13:56:45</span><em>.</em>
+            </p>
+
+        </div>
+        
+    </div>
+
+
+</div>
+
+                        <div class="hidden-print">
+    
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseProblemDiv">
+                        I need help with a computing problem
+                    </a>
+                </h4>
+            </div>
+            <a id="collapseProblem"><!-- comment --></a>
+            <div id="collapseProblemDiv" class="panel-collapse collapse">
+
+                <div class="panel-body">
+                    <ul>
+                        <li>Fill out this form to submit your issue to the <a href="https://kb.iu.edu/data/abxl.html">UITS
+                            Support Center</a>.
+                        </li>
+                        <li>Please note that you must be affiliated with Indiana University to receive support.</li>
+                        <li>All fields are required.</li>
+                    </ul>
+
+                    <form id="problemForm" action="#" method="post" role="form">
+
+                        <div class="form-group">
+                            <label for="fullName">Full name </label>
+                            <input type="text" class="form-control" placeholder="Enter full name" required="true" title="Full name is required." id="fullName" name="fullName" value="" />
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control h5-email" placeholder="Enter email address" required="true" title="Email is required." id="email" name="email" value="" />
+                            
+                            <p class="help-block">Please provide your IU email address. If you currently have a problem
+                                receiving email at your IU account, enter an alternate email address.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="affiliation">Relationship to Indiana University </label>
+                            <select class="form-control" required="true" title="Affiliation is required." id="affiliation" name="affiliation">
+                                <option value="">--Select One--</option>
+                                <option value="Student">Student</option>
+                                <option value="Faculty member">Faculty member</option>
+                                <option value="Staff member">Staff member</option>
+                                <option value="Affiliate">Affiliate</option>
+                                <option value="Alumnus/Alumna">Alumnus/Alumna</option>
+                                <option value="Applicant">Applicant</option>
+                                <option value="Emeritus faculty member">Emeritus faculty member</option>
+                                <option value="Parent">Parent</option>
+                                <option value="Retired staff member">Retired staff member</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="question">Please enter your question or describe your problem </label>
+                            <textarea class="form-control" rows="3" required="true" title="Problem is required." id="question" name="question"></textarea>
+                            
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label for="recaptcha_response_field">Captcha</label>
+                                <div id="problemRecaptchaDiv"></div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <input type="hidden" id="documentName" name="documentName" value="afcz" />
+                        <div id="problemSuccess"></div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseCommentDiv">
+                        I have a comment for the Knowledge Base
+                    </a>
+                </h4>
+            </div>
+            <a id="collapseComment"><!-- comment --></a>
+            <div id="collapseCommentDiv" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                    <ul>
+                        <li>Fill out this form to submit your comment to the IU Knowledge Base.</li>
+                        <li>If you are affiliated with Indiana University and need help with a computing problem, please
+                            use the <strong>I need help with a computing problem</strong> section above, or contact your
+                            campus <a href="https://kb.iu.edu/data/abxl.html">Support Center</a>.
+                        </li>
+                    </ul>
+
+                    <form id="commentForm" action="#" method="post" role="form">
+
+                        <div class="form-group">
+                            <label for="fullName">Full name </label>
+                            <input type="text" class="form-control" placeholder="Enter full name" required="true" title="Full name is required." id="fullName" name="fullName" value="" />
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control h5-email" placeholder="Enter email address" required="true" title="Email is required." id="email" name="email" value="" />
+                            
+                            <p class="help-block">Please provide your IU email address. If you currently have a problem
+                                receiving email at your IU account, enter an alternate email address.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="affiliation">Relationship to Indiana University </label>
+                            <select class="form-control" required="true" title="Affiliation is required." id="affiliation" name="affiliation">
+                                <option value="">--Select One--</option>
+                                <option value="Student">Student</option>
+                                <option value="Faculty member">Faculty member</option>
+                                <option value="Staff member">Staff member</option>
+                                <option value="Affiliate">Affiliate</option>
+                                <option value="Alumnus/Alumna">Alumnus/Alumna</option>
+                                <option value="Applicant">Applicant</option>
+                                <option value="Emeritus faculty member">Emeritus faculty member</option>
+                                <option value="Parent">Parent</option>
+                                <option value="Retired staff member">Retired staff member</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            
+                        </div>
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" checked="checked" id="concernChecked1" name="concernChecked" value="true" /><input type="hidden" name="_concernChecked" value="on" />
+                                My comment concerns this document
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Your comments</label>
+                            <textarea class="form-control" rows="3" required="true" title="Comment is required" id="comment" name="comment"></textarea>
+                            
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label for="recaptcha_response_field">Captcha</label>
+                                <div id="commentRecaptchaDiv"></div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div id="commentSuccess"></div>
+                        <input type="hidden" id="documentName" name="documentName" value="afcz" />
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                        <div id="sidebar-tools" class="hidden-print aside side-bar-tools">
+                            <a href="http://uits.iu.edu/" class="uits-tab"><span>UITS</span></a>
+                            <a class="chat-btn hidden" href="javascript: void(0)" data-title="title" data-summary="summary" data-image="url/to/image.jpg">
+                                <span>Chat</span>
+                            </a>
+                            <a class="share-btn hidden" href="javascript: void(0)" data-title="title" data-summary="summary" data-image="url/to/image.jpg">
+                                <span>Share</span>
+                            </a>
+                            <a class="tweet-btn hidden" href="#">
+                                <span>Tweet</span>
+                            </a>
+                            <a class="print-btn hidden" href="javascript: void(0)" data-title="title" data-summary="summary" data-image="url/to/image.jpg">
+                                <span>Print</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End page content -->
+
+                </div>
+            </section>
+        </div>
+        <!-- UITS FOOTER -->
+        <footer class="skirt kb-footer kb-bg-grey-01">
+
+
+    <div class="canister">
+        <div class="unit one-fourth conect-with-uits">
+            <h6>Connect with UITS</h6>
+            <ul class="socialist">
+                <li><a href="http://www.facebook.com/iu.uits" target="_blank"><span class="fa fa-facebook"></span></a>
+                </li>
+                <li><a href="https://twitter.com/insideuits" target="_blank"><span class="fa fa-twitter"></span></a>
+                </li>
+                <li><a href="http://www.youtube.com/uitsatiu" target="_blank"><span class="fa fa-youtube"></span></a>
+                </li>
+                <li><a href="https://plus.google.com/109054154815294782478" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+            </ul>
+            <p class="app-version text-muted">Version: trunk</p>
+        </div>
+        <div class="unit one-fourth kb-nav-repeat">
+            <h6>Navigation</h6>
+            <ul class="links">
+                <li class="default"><a href="/">Home</a>
+                </li>
+                <li class="default"><a href="/d/menu">Menu</a></li>
+                <li class="default"><a href="/d/line">About
+                    us</a></li>
+            </ul>
+        </div>
+        <div class="unit one-fourth it-at-iu">
+            <h6>IT@IU</h6>
+            <ul class="links">
+                <li><a href="http://it.iu.edu/about/" target="_blank">About IT</a></li>
+                <li><a href="https://uits.iu.edu/staff" target="_blank">IT staff</a></li>
+                <li><a href="http://it.iu.edu/jobs/" target="_blank">Jobs in IT</a></li>
+                <li><a href="http://it.iu.edu/ovpit/" target="_blank">OVPIT</a></li>
+            </ul>
+        </div>
+        <div class="unit one-fourth kb-contact">
+            <h6>Support &amp; More</h6>
+
+            <ul class="links">
+                <li><a href="http://ithelplive.iu.edu" title="ITHelpLive" alt="ITHelpLive">Chat with a consultant</a>
+                </li>
+                <li><a href="https://mailform.kb.iu.edu/email.php?cid=1061" alt="AskIT" title="AskIT">AskIU</a></li>
+                <li><a href="https://one.iu.edu" alt="One.IU" title="One.IU">One.IU</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+        <!-- /UITS FOOTER -->
+    </section>
+    <!-- IU FOOTER -->
+    <!-- *** Start IU brand footer *** -->
+    <footer class="institution-footer" id="footer-v1" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity">
+
+    <div class="wrapper">
+        <p class="tagline">Fulfilling <span>the</span> Promise</p>
+    </div>
+    <div class="canister kill-vertical">
+        <div class="unit whole">
+            <span class="signature">
+                <img src="https://assets.uits.iu.edu/image/iu-sig.2x.png" width="236" height="36" alt="Indiana University" />
+            </span>
+            <p class="copyright"><a href="http://www.iu.edu/comments/copyright.shtml" target="_blank">Copyright</a> &copy; <span>2017</span> The Trustees of <a href="http://www.iu.edu/" target="_blank">Indiana
+                University</a> | <a href="http://www.iu.edu/comments/complaint.shtml" target="_blank">Copyright
+                Complaints</a> | <a href="https://kb.iu.edu/d/priv?t=plain">Privacy Notice</a></p>
+        </div>
+    </div>
+</footer>
+</div>
+<div id="lightboxEnabler" class="visible-lg visible-md"></div>
+<div id="kb-inline-javascript-div" class="kb-invisible">
+    <script>
+        kb = new Object();
+        kb.autoSuggestUrl = '/auto-suggest';
+        kb.problemSubmitUrl ='/d/problem';
+        kb.commentSubmitUrl ='/d/comment';
+        kb.recaptchaPublicKey = '6LfugvISAAAAAG6U-tQfs_IfaWf0EzIo9a1D0TfQ';
+        kb.isloggedIn =false;
+        kb.generatePasswordUrl = '/rest/generate/password';
+        kb.bannerMessageUrl = '/rest/banner/message';
+    </script>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js">
+    <!--comment-->
+</script>
+
+<script src="/resources/jquery/jquery-1.9.0.js"><!--comment--></script>
+<script src="/resources/jquery/jquery.h5validate.js"><!--comment--></script>
+<div id="analytics" class="kb-invisible">
+
+    <script>
+        var analyticsId = 'UA-48518862-1';
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', analyticsId, 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('require', 'linkid', 'linkid.js');
+        if ($('meta[name=owner-group]').length > 0) {
+            ga('set', 'dimension1', $('meta[name=owner-group]').attr('content'));
+        }
+        if ($('meta[name=audiences]').length > 0) {
+            ga('set', 'dimension2', $('meta[name=audiences]').attr('content'));
+        }
+        if ($('link[rel="canonical"]').length > 0) {
+            ga('set', 'location', $('link[rel="canonical"]').attr('href'));
+        }
+        ga('send', 'pageview');
+
+    </script>
+    
+
+</div>
+<script src="/resources/build/bootstrap/js/bootstrap.min.js"><!--comment--></script>
+<script src="/resources/build/it/js/app.js"><!--comment--></script>
+<script src="/resources/jquery/ui/js/jquery-ui-1.10.4.custom.min.js"><!--comment--></script>
+<script src="/resources/jquery/colorbox/js/jquery.colorbox-min-1.5.9.js"><!--comment--></script>
+<script src="/resources/kms/js/kms.js"><!--comment--></script>
+<script src="/resources/kms/js/comment.js"><!--comment--></script>
+<script src="/resources/jquery/jquery.ba-throttle-debounce.min.js"><!--comment--></script>
+<script src="/resources/jquery/StickyTableHeaders/js/jquery.stickyheader.js"><!--comment--></script>
+
+</body>
+</html>
+U¬âÅb<      X÷B˙X÷CZ=ìº
+           :https://kb.iu.edu/d/afcz necko:classified 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=UTF-8
+dynaTrace: PT=543508;PA=-963647820;SP=PRO-PRD-KMS;PS=583172375
+Date: Sat, 25 Mar 2017 10:14:17 GMT
+Content-Language: en-US
+X-dynaTrace: PT=543508;PA=-963647820;SP=PRO-PRD-KMS;PS=583172375
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 44 predictor::https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css 1,1,1490436858,0 predictor::https://fonts.iu.edu/style.css?family=BentonSansCond:bold,regular 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/fonts.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/bootstrap/css/bootstrap.min.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/ui/css/jquery-ui-1.10.4.custom.min.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/colorbox/css/colorbox.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/iu/css/iu-brand.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/css/it-brand.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/css/kb.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/css/kms.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kms/css/print.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/css/overrides.css 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/kms/js/head.js 1,1,1490436858,0 predictor::https://assets.iu.edu/brand/1.x/trident-tab.gif 1,1,1490436858,0 predictor::https://assets.uits.iu.edu/image/iu-sig.2x.png 1,1,1490436858,0 predictor::https://www.google.com/recaptcha/api/js/recaptcha_ajax.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/jquery-1.9.0.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/jquery.h5validate.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/bootstrap/js/bootstrap.min.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/js/app.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/ui/js/jquery-ui-1.10.4.custom.min.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/colorbox/js/jquery.colorbox-min-1.5.9.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/kms/js/kms.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/kms/js/comment.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/jquery.ba-throttle-debounce.min.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/StickyTableHeaders/js/jquery.stickyheader.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/img/uits-tab.png 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/BentonSans-Regular.woff 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/benton-sans-cond-regular.woff 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/BentonSans-Bold.woff 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/bootstrap/fonts/glyphicons-halflings-regular.woff 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/BentonSans-RegularItalic.woff 1,1,1490436858,0 predictor::https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/benton-sans-cond-bold.woff 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/georgia-pro-italic.woff 1,1,1490436858,0 predictor::https://www.google-analytics.com/analytics.js 1,1,1490436858,0 predictor::https://www.google-analytics.com/plugins/ua/linkid.js 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/img/print-icon.png 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/img/facebook-share-icon.png 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/img/chat-icon.png 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/kb/img/twitter-share-icon.png 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/jquery/ui/css/images/ui-bg_flat_75_ffffff_40x100.png 1,1,1490436858,0 predictor::https://kb.iu.edu/resources/build/it/fonts/BentonSans-Light.woff 1,1,1490436858,0 predictor::https://www.google-analytics.com/r/collect?v=1&_v=j49&aip=1&a=980051634&t=pageview&_s=1&dl=https%3A%2F%2Fkb.iu.edu%2Fd%2Fafcz&dr=https%3A%2F%2Fwww.google.co.in&ul=en-us&de=UTF-8&dt=How%20do%20I%20quit%20the%20vi%20editor%20without%20saving%20my%20changes%3F&sd=24-bit&sr=1366x768&vp=1287x673&je=0&_u=SGAAAEAjI~&jid=762761109&gjid=687078694&cid=1802946671.1490436940&tid=UA-48518862-1&_r=1&cd1=scunix&cd2=default&z=1151431642 1,1,1490436858,0   qˆ

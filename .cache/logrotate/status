@@ -1,0 +1,19 @@
+logrotate state -- version 2
+"/home/bridgeit/.cache/upstart/dbus.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/im-config.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/indicator-application.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/unity7.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/gnome-session-Unity.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/window-stack-bridge.log" 2017-3-25-10:45:56
+"/home/bridgeit/.cache/upstart/at-spi2-registryd.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/gnome-keyring-gpg.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/hud.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/indicator-sound.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/indicator-printers.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/update-notifier-release.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/ssh-agent.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/indicator-bluetooth.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/gnome-keyring-ssh.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/unity-settings-daemon.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/unity-panel-service.log" 2017-4-4-9:15:25
+"/home/bridgeit/.cache/upstart/indicator-datetime.log" 2017-3-27-8:49:10
