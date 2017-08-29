@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TodoApp/src/main/webapp/templates/archieve.html&apos; to &apos;archive.html&apos;" description="Rename resource &apos;archieve.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/templates/archieve.html" name="archive.html" stamp="1502340775524" updateReferences="true"/>
+</session>

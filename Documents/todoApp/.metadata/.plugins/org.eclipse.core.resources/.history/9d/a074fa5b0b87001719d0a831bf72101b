@@ -1,0 +1,5 @@
+package com.bridgeit.TodoApp.DTO;
+
+public class GmailId {
+
+}

@@ -1,0 +1,92 @@
+package com.bridgeit.TodoApp.util;
+
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.bridgeit.TodoApp.DTO.WebScrapper;
+import com.bridgeit.TodoApp.Service.ScrapperService;
+
+@Component
+public class WebScrapping {
+	
+	WebScrapper webScrapper=new WebScrapper();
+	
+	@Autowired
+	ScrapperService scrapperService;
+	
+	public void checkUrlForTitleScrapping(String title) {
+		// for checking title as a url
+		// fetch the document over HTTP
+		Document doc;
+		try {
+			doc = Jsoup.connect(title).get();
+			// get the page title
+			String webtitle = doc.title();
+			System.out.println("titlefortitle: " + webtitle);
+
+			// get all links in page
+			Elements links = doc.select("a[href]");
+			for (Element link : links) {
+				// get the value from the href attribute
+				System.out.println("\nlinkTitle: " + link.attr("href"));
+				System.out.println("textTitle: " + link.text());
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void checkUrlForDescScrapping(String description) {
+		// for checkinh description as a url
+		// fetch the document over HTTP
+		Document doc1;
+		try {
+			doc1 = Jsoup.connect(description).get();
+			/* this browseragant thing is important to trick servers into sending us the LARGEST versions of the images */
+		    //con.userAgent(Constants.BROWSER_USER_AGENT);
+		   
+			/*// get the page title
+			String webtitle1 = doc1.title();
+			System.out.println("titlefordesc: " + webtitle1);
+			webScrapper.setTitle(webtitle1);
+			
+			// get all links in page
+			Elements links1 = doc1.select("a[href]");
+			for (Element link : links1) {
+				// get the value from the href attribute
+				System.out.println("\nlinkDesc: " + link.attr("href"));
+				System.out.println("textDesc: " + link.text());
+				webScrapper.setHost(link.attr("href"));
+			}
+			
+			Elements media = doc1.select("[src]");
+			System.out.println("Media: "+ media.size());
+	        for (Element src : media) {
+	        	System.out.println("\n img: " + src.attr("src"));
+	        	webScrapper.setImage(src.attr("src"));
+	        }
+	        
+	        scrapperService.saveScrapper(webScrapper);*/
+			
+			String text = null;
+		    Elements metaOgTitle = doc1.select("meta[property=og:title]");
+		    System.out.println("metaOgTitle "+metaOgTitle);
+		    if (metaOgTitle!=null) {
+		        text = metaOgTitle.attr("content");
+		    }
+		    else {
+		        text = doc1.title();
+		    }
+	        
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

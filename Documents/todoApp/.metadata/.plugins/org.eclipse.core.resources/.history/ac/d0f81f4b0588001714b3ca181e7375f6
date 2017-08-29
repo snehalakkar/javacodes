@@ -1,0 +1,5 @@
+package com.bridgeit.TodoApp.json;
+
+public class UserResponse extends Response{
+
+}

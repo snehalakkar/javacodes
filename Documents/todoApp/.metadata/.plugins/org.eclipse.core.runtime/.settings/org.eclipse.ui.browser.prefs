@@ -1,0 +1,4 @@
+browser-choice=1
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="2">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n<external location\="/usr/bin/google-chrome" name\="Chrome"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=file\:///home/bridgeit/Documents/todoApp/TodoApp/src/main/webapp/images/icons8-Image%20File-26.png|*|file\:/home/bridgeit/Documents/todoApp/TodoApp/src/main/webapp/images/icons8-Image%20File-26.png|*|file\:///home/bridgeit/Documents/todoApp/TodoApp/src/main/webapp/images/icons8-Image%20File-50.png|*|file\:/home/bridgeit/Documents/todoApp/TodoApp/src/main/webapp/images/icons8-Image%20File-50.png|*|file\:///home/bridgeit/Documents/todoApp/TodoApp/src/main/webapp/images/icons8-Image%20File%20Filled-50.png|*|file\:/home/bridgeit/Documents/todoApp/TodoApp/src/main/webapp/images/icons8-Image%20File%20Filled-50.png|*|http\://localhost\:8080/TodoApp/|*|

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="todo">
+<head>
+
+<link rel="stylesheet"	href="bower_components/bootstrap-css-only/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/loginRegfile.css">
+</head>
+<body>
+
+<div class="container" ng-controller="loginformCtrl">
+	<div class="col-md-3 col-sm-2 col-lg-4"></div>
+	<div id="formDiv" class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
+		<div class="form" id="ex1">
+			<form action="" method="post" name="myform">
+				<div>
+					<h3 align="center">Login</h3>
+				</div>
+				<div class="form-group">
+					<input type="email" data-ng-model="email"
+						class="form-control" placeholder="Email" name="email"
+						ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,6}$/"
+						required="required"> <!-- <span
+						ng-show="myform.email.$error.required"> <span style="color:red;"
+						class="glyphicon glyphicon-asterisk"></span></span> -->
+						<span style="color:red;"  ng-show="myform.email.$invalid&&myform.email.$error.pattern"> *Invalid email address.</span>
+						<!-- <span style="color:red;" ng-show="myform.email.$dirty && myform.email.$invalid">*</span>  -->
+				</div>
+				<div class="form-group">
+					<input type="password" data-ng-model="password" name="password"
+						ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{6,20}$/"
+						class="form-control" placeholder="Password" required="required">
+						<!-- <span
+						ng-show="myform.password.$dirty && myform.password.$error.required">Email is required.</span>  -->
+						<span style="color:red;"  ng-show="myform.password.$dirty && myform.password.$error.pattern">*Invalid password pattern.</span>
+				</div>
+
+				<div class="form-group">
+					<input type="submit" value="Login" id="sub"
+						data-ng-click="login()">
+				</div>
+				<p class="message">
+					Not registered? <a ui-sref="userRegistration">Create an account</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-2 col-lg-4"></div>
+	{{temp}}
+</div>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script	src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+var app=angular.module("todo",[]);
+app.controller('loginformCtrl', function($scope, $state, $http) {
+	$scope.user = {};
+
+	$scope.login = function () {
+		var user = {};
+		user.email = $scope.email;
+		user.password = $scope.password;
+		$http({"url":"http://localhost:8080/TodoApp/userlogin","data":user,method:"post"}).then(function (data) {
+			console.log(data.data);
+
+		})
+		.catch( function(error){
+			console.log(error);
+		});
+	}
+});
+</script>
+</html>

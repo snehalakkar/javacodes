@@ -1,0 +1,66 @@
+.form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	border: 0;
+	width: 100%;
+	padding: 20px;
+	font-size: 14px;
+}
+
+#ex1 {
+	background-color: transparent;
+	margin-top: 100px;
+	padding: 15;
+	opacity: 0.95;
+	alpha: 0.65;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0
+		rgba(0, 0, 0, 0.24);
+	padding: 30px;
+}
+
+#sub {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4c6faf;
+	width: 63%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	cursor: pointer;
+	align:center;
+}
+
+#sub1{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 66%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	cursor: pointer;
+	align:center;
+}
+
+.form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form p {
+	color: red;
+	margin-left: 10px;
+}
+
+.ng-dirty:focus ~ .ch1 {
+     display:none;
+}

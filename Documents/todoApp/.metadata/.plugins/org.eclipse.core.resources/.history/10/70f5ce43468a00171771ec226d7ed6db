@@ -1,0 +1,18 @@
+package com.bridgeit.TodoApp.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.bridgeit.TodoApp.DAO.ScrapperInterface;
+import com.bridgeit.TodoApp.DTO.TodoTask;
+import com.bridgeit.TodoApp.DTO.WebScrapper;
+
+public class ScrapperService {
+	@Autowired
+	ScrapperInterface scrapperImplementation;
+	
+	@Transactional
+	public void saveScrapper(WebScrapper webScrapper) {
+		todoDaoImplementation.saveTodo(webScrapper);	
+	}
+}

@@ -1,0 +1,12 @@
+app.controller('loginformCtrl',function($scope, $state, loginformService) {
+	
+	$scope.submitLogin = function() {
+		var obj={
+				email:$scope.email,
+				password:$scope.password,
+		}
+		loginformService.runservice(obj);
+		alert(obj+"mcbnkn");
+	}
+	
+});

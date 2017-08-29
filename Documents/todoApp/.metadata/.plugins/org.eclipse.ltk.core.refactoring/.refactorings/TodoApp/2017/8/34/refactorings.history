@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TodoApp/src/main/java/com/bridgeit/TodoApp/json/UserResponse.java&apos; to &apos;TokenResponse.java&apos;" description="Rename resource &apos;UserResponse.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/bridgeit/TodoApp/json/UserResponse.java" name="TokenResponse.java" stamp="1503494354030" updateReferences="true"/>
+</session>

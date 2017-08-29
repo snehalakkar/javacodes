@@ -1,0 +1,16 @@
+package com.bridgeit.TodoApp.util;
+
+public class URLUtil {
+	public static boolean isValidURL(String urlString)
+	{
+	    try
+	    {
+	        URL url = new URL(urlString);
+	        url.toURI();
+	        return true;
+	    } catch (Exception exception)
+	    {
+	        return false;
+	    }
+	}
+}

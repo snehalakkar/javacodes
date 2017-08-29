@@ -1,0 +1,16 @@
+package com.bridgeit.TodoApp.DAO.DAOImplementation;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import com.bridgeit.TodoApp.DTO.TodoTask;
+
+public interface ScrapperImplementation implements ScrapperInterface{
+	@Autowired
+	@Qualifier("hibernate4AnnotatedSessionFactory")
+	private SessionFactory sessionFactory;
+
+	
+}

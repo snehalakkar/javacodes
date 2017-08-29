@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "homepage": "https://github.com/snehalakkar/javacodes",
+  "authors": [
+    "snehalakkar <snehalakkar@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "angular-ui-router": "^1.0.5",
+    "angular-ui-sortable": "^0.17.1"
+  }
+}

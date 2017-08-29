@@ -1,0 +1,97 @@
+package com.bridgeit.TodoApp.controller;
+
+import java.security.NoSuchAlgorithmException;
+import java.util.Date;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bridgeit.TodoApp.DTO.Tokens;
+import com.bridgeit.TodoApp.DTO.User;
+import com.bridgeit.TodoApp.Service.TokenService;
+import com.bridgeit.TodoApp.Service.UserService;
+import com.bridgeit.TodoApp.json.UserFieldError;
+import com.bridgeit.TodoApp.util.PasswordEncryptionUsingHashing;
+import com.bridgeit.TodoApp.util.TokenManupulation;
+
+@RestController
+public class UserLoginController {
+
+	@Autowired
+	UserService userService;
+	
+	@Autowired
+	TokenService tokenService;
+	
+	@Autowired
+	TokenManupulation tokenManupulation;
+	
+	private static final Logger logger = Logger.getLogger("loginFile");
+	private static final Logger logger1 = Logger.getRootLogger();
+
+	@PostMapping(value = "/userLogin")
+	public ResponseEntity<Tokens> userLogin(@RequestBody Map<String, String> reqParam,
+			HttpServletRequest request,HttpServletResponse response) throws NoSuchAlgorithmException {
+		
+		logger.warn("toDoLogin is executed!");
+		logger1.info("rootlogger demo...");
+		System.out.println("************");
+		UserFieldError err = null;
+		
+		String email = reqParam.get("email");
+		String password = reqParam.get("password");
+		System.out.println(email);
+		System.out.println(password);
+		String encriptedpwd=PasswordEncryptionUsingHashing.passwordEncryption(password);
+		
+		User user = userService.userLogin(email,encriptedpwd);
+		 
+		if (user != null) {
+			System.out.println("************in success");
+			logger.info("validation successfull...");
+			err = new UserFieldError();
+			err.setStatus(1);
+			err.setMessage("successfully login");
+			
+			//setting an httpSession with login user object
+			HttpSession httpSession=request.getSession();
+			httpSession.setAttribute("userObject", user);
+			                                
+			Tokens tokens=tokenManupulation.generateTokens();
+			tokens.setGetUser(user);
+			tokenService.saveToken(tokens);
+			
+			response.setHeader("acc_token", tokens.getAccessToken());
+			response.setHeader("ref_token", tokens.getRefreshToken());
+
+			long createdTime=tokens.getCreatedOn().getTime()/1000;
+			response.setDateHeader("created_on", createdTime);
+			
+			return new ResponseEntity<Tokens>(tokens,HttpStatus.OK);
+			
+		} 
+		System.out.println("************not success");
+			logger.info("validation not successfull...");
+			return new ResponseEntity<Tokens>(HttpStatus.NOT_FOUND);
+	}
+	
+	@PostMapping(value = "/generateNewaccessToken")
+	public ResponseEntity<Tokens> generateNewaccessToken(){
+		Tokens tokens=tokenManupulation.generateNewaccessToken();
+		
+		return new ResponseEntity<Tokens>(tokens,HttpStatus.OK) ;
+		
+	}
+}

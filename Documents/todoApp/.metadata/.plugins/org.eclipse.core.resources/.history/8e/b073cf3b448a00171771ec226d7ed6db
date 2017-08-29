@@ -1,0 +1,5 @@
+package com.bridgeit.TodoApp.DAO;
+
+public interface ScrapperInterface {
+
+}
